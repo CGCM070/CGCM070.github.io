@@ -1,0 +1,18 @@
+@import "./global/global.css";
+
+/* Utilidades */
+@import "./utilidades/colores.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/componentes.css";
+
+/* Header y Footer */
+@import "./global/header.css";
+@import "./global/footer.css";
+
+
+/* INTRO */
+@import "./home/introduccion.css";
+@import "./home/bicicletas-lista.css";
+@import "./home/tecnologia.css";
+@import "./home/socios.css";
+@import "./home/seguros.css";

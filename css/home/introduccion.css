@@ -1,0 +1,51 @@
+.introduccion-bg {
+    background: var(--color-12) url("../../img/dec/bottom-left.svg") no-repeat
+      bottom 40px left 20px;
+    box-shadow: inset 0 -120px var(--color-0);
+  }
+  
+  .introduccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+  }
+  
+  .introduccion img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .introduccion-contenido {
+    align-self: end;
+    padding-bottom: 200px;
+  }
+  
+  .introduccion h1 {
+    margin-bottom: 32px;
+  }
+  
+  .introduccion p {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 800px) {
+    .introduccion {
+      padding-top: 40px;
+      background: var(--color-11);
+      box-shadow: inset 0 -60px var(--color-0);
+    }
+    .introduccion-contenido {
+      padding-bottom: 0px;
+    }
+    .introduccion h1 {
+      margin-bottom: 16px;
+    }
+    .introduccion {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .introduccion img {
+      width: 100%;
+    }
+  }
+  
