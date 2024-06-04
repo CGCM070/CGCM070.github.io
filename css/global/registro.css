@@ -135,7 +135,7 @@ input.invalid {
         opacity: 0;
     }
     #password-icon, #confirm-password-icon {
-        left: 75%;
+        left: 79%;
     }
 }
 
@@ -147,6 +147,6 @@ input.invalid {
     }
 
     #password-icon, #confirm-password-icon {
-        left: 85%;
+        left: 70%;
     }
 }
