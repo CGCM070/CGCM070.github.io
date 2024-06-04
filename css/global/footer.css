@@ -1,3 +1,14 @@
+    /* Utilice posicionamineto de tipo Grid que me facilito en este apartado */
+    /*footer-bg: background-color de mi footer, usando las variables creadas anteriormente*/
+    /*footer-contacto li:nth-child(2)::after, .footer-contacto li:nth-child(4)::after : mucho dolor de cabeza,
+    no funciona del todo, intente optimizar el codigo y no escribir lo mismo varas veces para aplicar la raya sobre
+    los elementos de contacto,decidí solo aplicar al segundo y cuarto hijo*/
+    /*footer-copy y footer-redes : los contenedores de las imagenes y el copy */
+    /*en las medias pasando de dos columnas (1fr) (1fr)  a una (1fr)*/
+
+
+
+
 .footer-bg {
     background-color: var(--color-12);
   }
@@ -63,5 +74,7 @@
     .footer-copy {
       margin-top: 0px;
     }
+    
   }
+
   

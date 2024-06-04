@@ -1,3 +1,9 @@
+
+
+  /*Asignando las fuentes a sus repectivas clases  */
+   /*Ajustando el tamaño del título Principal "Bicicletas Hechas a..."
+   junto con el Subtítulo  y la de Tecnologia Avanzada*/
+
 .fuente-1-xs {
     font: 500 0.75rem/1.35 "Poppins", sans-serif;
   }
@@ -53,7 +59,9 @@
   .fuente-1-xxl {
     font: 600 4rem/1.125 "Poppins", sans-serif;
   }
-  
+
+ 
+
   @media (max-width: 1200px) {
     .fuente-1-xxl {
       font-size: 3rem;
@@ -65,7 +73,7 @@
       font-size: 1.125rem;
     }
   }
-  
+      
   @media (max-width: 800px) {
     .fuente-1-xxl {
       font-size: 2rem;

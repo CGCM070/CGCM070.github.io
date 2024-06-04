@@ -4,11 +4,11 @@
 @import "./utilidades/colores.css";
 @import "./utilidades/tipografia.css";
 @import "./utilidades/componentes.css";
-
+@import "./utilidades/contactoform.css";
 /* Header y Footer */
 @import "./global/header.css";
 @import "./global/footer.css";
-
+@import "./global/login.css";
 
 /* INTRO */
 @import "./home/introduccion.css";
@@ -16,3 +16,9 @@
 @import "./home/tecnologia.css";
 @import "./home/socios.css";
 @import "./home/seguros.css";
+
+
+
+/* Contacto */
+@import "./global/contacto.css";
+@import "./global/registro.css";

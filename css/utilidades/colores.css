@@ -1,4 +1,8 @@
-:root {
+
+  /* Mis colores a utilizar en el proyecto  */
+  /* Asignando los colores a sus clases y variables*/
+  
+:root {    
     --color-0: #ffffff;
     --color-1: #f7f7f7;
     --color-2: #ededed;
@@ -18,7 +22,7 @@
     --color-p4: #664400;
     --color-p5: #332200;
   }
-  
+ 
   .color-0 {
     color: var(--color-0);
   }

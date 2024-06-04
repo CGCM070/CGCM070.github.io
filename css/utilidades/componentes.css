@@ -1,4 +1,10 @@
-.contenedor {
+  /*Componentes que reutilizare varias veces en toda la página*/
+  /*Contenedor: la clase que mantendra  los componentes de cada sección de la página centrada*/
+  /*Botón: Los botones primarios y secudarios con sus respectivos hovers */
+  /*Link: El enlace de eliga un modelo y el efecto de de la raya en el :: after */
+  /*titulo : no lo utilice de  momento */
+  
+  .contenedor{
     box-sizing: border-box;
     max-width: 1200px;
     padding-left: 20px;
@@ -7,6 +13,21 @@
     margin-right: auto;
   }
   
+  
+  .boton2{
+    display: inline-block;
+    padding: 8px 22px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    font: 400 1.1rem/1.35 "Roboto", sans-serif;
+    color: var(--color-p5);
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    transition: all ease 300ms;
+  }
+
   .boton {
     display: inline-block;
     padding: 16px 32px;
@@ -19,39 +40,41 @@
     max-width: max-content;
     border: none;
     cursor: pointer;
+    transition: all ease 300ms;
   }
+  .botonRegistro {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    color: var(--color-p5);
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    transition: all ease 300ms;
+  }
+
   
-  .boton:hover {
+ .boton:hover {
     background: linear-gradient(#ffb60d, #e59317);
+
   }
-  
+
+
+
   .boton.secundario {
-    background: var(--color-10);
+    background: var(--color-11);
     color: var(--color-2);
   }
   
-  .botao.secundario:hover {
-    background: var(--color-9);
+  .boton.secundario:hover {
+    background: var(--color-6);
   }
   
-  .botao.seta {
-    display: flex;
-    align-items: center;
-  }
-  
-  .botao.seta::after {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 10px;
-    margin-left: 12px;
-    background: url("../../img/iconos/seta.svg");
-    transition: transform 0.2s;
-  }
-  
-  .botao.seta:hover::after {
-    transform: translateX(4px);
-  }
+
+
   
   @media (max-width: 600px) {
     .boton {
@@ -83,20 +106,23 @@
     color: var(--color-0);
   }
   
-  .titulo {
-    padding: 60px 0;
-    background: var(--cor-11);
-  }
-  
-  .titulo div {
-    background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
+  .titulo-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--color-11);
   }
   
   .titulo p {
     margin-bottom: 4px;
   }
   
+
+  
   @media (max-width: 800px) {
+    .titulo-bg {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
     .titulo p {
       font-size: 1rem;
       text-transform: lowercase;

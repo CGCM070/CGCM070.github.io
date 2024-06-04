@@ -1,36 +1,60 @@
+  /*En mi apartado de Header todo lo esperado con header , tendre todo y exclusivamente lo que conlleva a ella */
+  /*header-bg : el babackground-color*/
+  /*header: utlicé posicionamiento Flex*/
+  /*abrir-menu : botón que usamos para el menu de hamburguesa*/
+  /*header-menu a::after : al igual que el link presentado "componentes" lo utilice aquí*/
+  /*submenu : SubMenu desplegable  */
+  /*submenu a::after. eliminando el efecto que obtenemos con el hover en los enlaces del nav*/
+  /*header-menu li:hover : definiendo el comportamiento del submenu al aplicar hover*/
+  /*header-menu a:hover::after, header-menu a.ativo::after : configurando la longitud relativa al padre "al <a> del nav"*/
+  /*icon-container: contenedor de mis iconos de carrito y inicio de sesión*/
+  /*Login: invirtinedo el color de mi svg*/
 .header-bg {
     background: var(--color-12);
   }
-  
+
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    /* justify-content:space-around; */
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
+    /* border:  solid tomato; */
   }
   
   .header img {
     min-width: max-content;
   }
-  
+  .abrir-menu {
+    display: none;
+  }
   .header-menu {
+
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 200px;
+    order:2;
   }
-  
-  /* Alternativa, falta de suporte do gap flex */
-  /* .header-menu li + li {
-    margin-left: 40px;
+
+  /* #check {
+    display: none;
+  }  
+
+  .checkbtn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
   } */
   
   .header-menu a {
     display: inline-block;
     padding: 16px 0;
     position: relative;
+    font-weight: bold;
   }
   
   .header-menu a::after {
@@ -41,14 +65,68 @@
     background: var(--color-0);
     position: absolute;
     margin-top: 4px;
-    transition: 0.3s;
+    transition: 0.2s;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    background: var(--color-11);
+    border-radius: 4px;
+    /* padding: 10px; */
+    padding: 5px 10px 5px 5px;
+    list-style: none;
+    font-size: medium;
+    
   }
   
+  .submenu a {
+    display: block;
+    padding: 10px;
+    color: var(--color-0);
+  }
+  
+  
+  .submenu a:hover {
+    background: var(--color-10);
+  }
+  
+  .submenu a::after {
+    display: none;
+  }
+
+  .submenu a:hover::after {
+    display: none;
+  }
+  
+  .header-menu li:hover .submenu {
+    display: block;
+  }
+  
+
   .header-menu a:hover::after,
   .header-menu a.ativo::after {
     width: 100%;
   }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* border:  solid tomato; */
+    order: 3;
+  }
   
+  .login {
+    filter: invert();
+  }  
+  
+  @media (width <= 1100px){
+    .header-menu{
+      gap: 110px;
+    }
+  }
+
   @media (max-width: 800px) {
     .header-menu {
       gap: 20px;
@@ -59,21 +137,103 @@
       border-radius: 4px;
     }
     .header-menu a:hover,
-    .header-menu a.ativo {
+    .header-menu a.activo {
       background: var(--color-10);
     }
     .header-menu a::after {
       display: none;
     }
+    .cerrar-menu{
+      display: none;
+    }
   }
-  
-  @media (max-width: 600px) {
-    .header-menu {
-      gap: 12px;
+  @media (min-width: 800px) {
+    .cerrar-menu{
+      display: none;
+    }
+ 
+  }
+
+
+  @media (max-width: 684px) {
+    .submenu{
+      display: none !important ;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu {
+      display: block;
+      border: 0;
+      border-radius:4px ;
+      font-size: 1.2rem;
+      background-color: var(--color-p1);
+      cursor: pointer;
+    }
+
+    .icon-container {
+      order: 1;
+      gap: 40px;
+      
+    }
+    .abrir-menu{
+      order: 2;
+    }
+
+    .nav{
+      display: none;
+    }
+    /* caracteristicas de mi menu hamburguesa*/
+    .nav {
+      z-index: 20;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1cf4;
+      border-radius: 4px;
+      padding: 24px 20px ;
+      box-shadow:  0 0 0 500vmax rgba(0, 0, 0, 0.7) ;
+    
     }
     .header-menu a {
-      padding: 8px 12px;
-      font-size: 0.875rem;
+      background-color: transparent;
+      padding: 5px 0px;
+      width: 200px;
+      text-align: start;
+    }
+    .header-menu a::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: var(--color-0);
+      position: absolute;
+      margin-top: 4px;
+     
+    }
+    .header-menu a:hover {
+      color: var(--color-p1);
+    }
+
+    .nav.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .header-menu {
+      flex-direction: column;
+      align-items: end;
+
+    }
+ 
+  }
+  @media (width <= 357px) {
+    .icon-container {
+      display: none;
     }
   }
-  

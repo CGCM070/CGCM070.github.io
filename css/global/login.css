@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+   
+    background-color: #fff;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 80vh;
+    display: flex;
+}
+
+.form-login {
+    width: 600px;
+    height: 340px;
+    margin: auto;
+    margin-top: 160px;
+    box-shadow: 7px 13px 37px #635e5e;
+    padding: 20px 30px;
+    border-radius: 10px;
+   background-color: var(--color-1);
+    text-align: center;
+}
+.form-login h5{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-11);
+}
+.controls{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    background-color: var(--color-2);
+    border-radius: 4px;
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+.controls:focus {
+    
+    outline: none;
+    border-color: rgb(234, 190, 14); 
+}
+
+.boton2:focus {
+    outline: none;
+    box-shadow: 0 0 1px #fea;  
+}
+
+
+.plogin{
+    text-align: center;
+    margin-top: 20px;
+}
+.plogin:hover{
+    color: rgb(79, 76, 76);
+    font-style: italic;
+    cursor: pointer;
+}
+.registrarse {
+    color:rgb(222, 184, 13);
+    font-style: italic;
+}
+
+.registrarse:hover {
+    color:rgba(215, 176, 3, 0.854);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+

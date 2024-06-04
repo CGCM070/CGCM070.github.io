@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--del menu hambuerguesa-->
+    <title>Registro</title>
+
+</head>
+<body>
+    <header class="header-bg">
+        <div class="header contenedor">
+          <a href="../index.html">
+            <img src="../img/bikcraft.svg" >
+          </a>
+          <div class="icon-container">
+            <a href="../pages/login.html"><img class="login" src="../img/iconos/login.svg" alt=""></a>
+            <a href=""><img class="login" src="../img/iconos/shopping_cart.svg" alt=""></a>
+          </div>
+    
+          <button  id="abrir"   class="abrir-menu"><i class="bi bi-list"></i></button>
+          <nav   id="nav"  class="nav  " aria-label="primaria">
+            <button  class="cerrar-menu"    id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="header-menu fuente-1-m color-0">
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="">Seguros</a></li>
+              <li><a href="">Bicicletas</a>
+                <ul class="submenu">
+                  <li><a href="">Montaña</a></li>
+                  <li><a href="">Carretera</a></li>
+                  <li><a href="">Ciudad</a></li>
+                  <li><a href="">Eléctricas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <main> 
+      <div class="contacto contenedor">
+        <section class="contacto-formulario" aria-label="Formulário">
+            <form class="form registro" action="" novalidate>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="+34 123456789" maxlength="13"    required>
+                </div>
+                <div class="col-2">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="contacto@email.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" required>
+                    <span id="email-icon"></span> <!-- Contenedor para el ícono de validación del correo electrónico -->
+                </div>
+                <div class="col-2">
+                  <label for="password">Contraseña</label>
+                  <input type="password" id="password" name="password" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\#$@!%&?])(?!\s)[a-zA-Z\d\#$@!%&?]{8,16}$" required>
+                    <span id="password-icon"></span> <!-- Contenedor para el ícono de validación de la contraseña -->
+                    <span id="mensaje-validacion">La contraseña debe contener dígitos, caracteres especiales (#$@!%&?), alguna minúscula, alguna mayúscula y al menos entre 8 y 16 letras.</span>
+              </div>
+              
+              <div class="col-2">
+                  <label for="confirm_password">Confirmar Contraseña</label>
+                  <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar Contraseña" required>
+                  <span id="confirm-password-icon"></span> <!-- Contenedor para el ícono de validación de la confirmación de la contraseña -->
+              </div>
+              
+              
+                <div class="col-2">
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">He leído y acepto la política de privacidad</label>
+                </div>
+             
+                  <button   id="enviarFormulario" class="botonRegistro color-2" type="submit" >Registrarse</button>
+                  <a class="inicio-sesion-E" href="../pages/login.html">Iniciar sesión </a>
+            </form>
+        </section>
+     </div>
+    </main>
+
+
+    <footer class="footer-bg">
+        <div class="footer contenedor">
+          <img src="../img/bikcraft.svg" >
+          <div class="footer-contacto">
+            <h3 class="fuente-2-l-b color-0">Contacto</h3>
+            <ul class="fuente-2-m color-5">
+              <li>+55 34500000</li>
+              <li>contacto@bikcraft.com</li>
+              <li>Málaga-Fuengirola. IES vega de mijas.</li>
+              <li>Calle Antonio García Moreno 5 </li>
+            </ul>
+            <div class="footer-redes">
+              <a href="https://www.instagram.com/"><img src="../img/redes/instagram.svg" ></a>
+              <a href="https://es-es.facebook.com/"><img src="../img/redes/facebook.svg" ></a>
+              <a href="https://www.youtube.com"><img src="../img/redes/youtube.svg"></a>
+            </div>
+          </div>
+          <div class="footer-informaciones">
+            <h3 class="fuente-2-l-b color-0">Informaciones</h3>
+            <nav>
+              <ul class="fuente-1-m color-5">
+                <li><a href="">Bicicletas</a></li>
+                <li><a href="">Seguros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="">Terminos y Condiciones</a></li>
+              </ul>
+            </nav>
+          </div>
+          <p class="fuente-2-m color-6 footer-copy">Bikcraft@algunos Derechos Reservados</p>
+        </div>
+      </footer>
+    <script src="../js/validacion.js"></script>
+    <script src="../js/menuHamburguesa.js"></script>
+</body>
+</html>

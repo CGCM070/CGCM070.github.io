@@ -1,4 +1,15 @@
+
+/*Posicionamiento Grid 4 columnas de 1fr*/
+/* .socios li:first-child,
+  .socios li:nth-child(5) añadiendo bordes al primer hijo y quinto 
+  y luedo a todos los hijos del quinto en adelante : socios li:nth-child(n + 5) */
+
+
+
+  
+
 .socios {
+  background-color: var(--color-0);
     padding-top: 60px;
     padding-bottom: 120px;
   }
