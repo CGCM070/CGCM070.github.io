@@ -143,7 +143,4 @@ input.invalid {
         display: none;
         opacity: 0;
     }
-    #password-icon, #confirm-password-icon {
-        left: 60%;
-    }
 }
