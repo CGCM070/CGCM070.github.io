@@ -128,5 +128,8 @@ input.invalid {
     .registro button {
         margin-left: 0;
     }
+    #email-icon {
+        display: none;
+    }
   }
   
