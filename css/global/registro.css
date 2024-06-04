@@ -130,6 +130,6 @@ input.invalid {
     }
     #email-icon {
         display: none;
+        opacity: 0;
     }
   }
-  
