@@ -131,11 +131,10 @@ input.invalid {
         margin-left: 0;
     }
     #email-icon {
-        display: none;
-        opacity: 0;
+        left: 90%;
     }
     #password-icon, #confirm-password-icon {
-        left: 79%;
+        left: 80%;
     }
 }
 
